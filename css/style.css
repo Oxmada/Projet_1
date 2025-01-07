@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0; 
 }
 
 .main-container {
@@ -165,3 +166,288 @@ a {
 @media (max-width: 767.98px) {
     /* ... */
 }
+
+/* Balises du Header */
+
+
+header {
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 60px;
+}
+
+nav ul {
+   display: flex;
+   gap: 66px; 
+   list-style: none;
+   font-family: 'Raleway', sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+}
+
+header img {
+    width: 61.09px;
+    height: 19px;
+    margin-top: 30px;
+}
+
+
+nav a:hover {
+    color: #9747FF;
+    padding-top: 14px;
+    border-top: #9747FF solid 2px; 
+}
+
+/* Balises générales */
+
+H2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    margin: 0;
+}
+H3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0;
+}
+
+p {
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+/* Section numéro 1 */
+
+.form_location {
+    display: flex;
+    flex-direction: row;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px 0 0 15px;
+    height: 47px;
+    width: 50px;
+    background-color: #F2F2F2;
+}
+
+.label i {
+    display: inline-block; 
+    width: 14px; 
+    height: 18px; 
+    font-size: 18px;
+    color: black;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    height: 47px;
+    width: 195px;
+}
+
+.input input {
+    width: 100%;
+    height: 100%; 
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+input::placeholder {
+    color: black; 
+    font-size: 18px; 
+    font-weight: bold;
+    text-align: center;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    height: 47px;
+    width: 132px; 
+}
+
+.button button {
+    width: 100%;
+    height: 100%; 
+    border: none;
+    background-color: #0065FC;
+    border-radius: 0 15px 15px 0;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.container-filtre {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+
+.label-filtre {
+    display: flex;
+    align-items: center;
+}
+
+.filtre {
+    border: solid 2px #D9D9D9;
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+    border-radius: 25px;
+}
+
+.filtre:hover {
+    background-color: #DEEBFF;
+}
+
+.filtre i {
+    display: inline-block; 
+    width: 22px; 
+    height: 22px; 
+    font-size: 22px;
+    padding-right: 10px;
+    padding-left: 15px;
+}
+
+.information {
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+
+.information-icone {
+    border: solid 1px #D9D9D9;
+    border-radius: 50px ;
+    width: 24px;
+    margin-right: 10px;
+   
+}
+
+.information-icone i {
+    display: inline-block;
+    width: 4px; 
+    height: 10px; 
+    font-size: 10px;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+/* Section numéro 2 */
+
+.hebergements-marseille {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.hebergements-marseille-card {
+    height: 207.25px;
+    width: 250.33px;
+    border: none;
+    border-radius: 20px;
+    background-color: #FFFF;
+}
+
+.hebergements-marseille-image-card img {
+    width: 95%;
+    padding: 2.5% 2.5% 2.5% 2.5%;
+    height: 114px;
+    object-fit: cover;
+    border: none;
+    border-radius: 20px 20px 0 0 ;
+}
+
+.description-card {
+    padding-left: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 5.5px;
+}
+
+.note-étoiles i {
+    width: 14.25px;
+    height: 13.25px;
+    font-size: 14.25px;
+}
+
+.note-étoiles span i {
+    color: #F2F2F2;
+}
+
+
+/* Balises section numéro 3 */
+
+.activites {
+    padding: 30px;
+    box-sizing: border-box;
+    
+}
+
+.activites-marseille {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.activites-marseille-card {
+
+    height: 439px;
+    width: 297.5px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.activites-marseille-card img {
+    object-fit: cover;
+    border: none;
+    border-radius: 20px 20px 0 0 ;
+    width: 100%;
+    height: 380px;
+}
+.description-card-activites {
+    padding-left: 19px;
+    padding-top: 15px;
+}
+
+/* Balises du footer */
+
+footer {
+    background-color: #F2F2F2;
+}
+
+.informations-footer {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.informations-footer-bloc {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 446.67px;
+}
+
