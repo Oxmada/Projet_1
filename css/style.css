@@ -1,4 +1,5 @@
 /****** General ***********/
+
 * {
     font-family: 'Raleway', sans-serif;
 }
@@ -60,6 +61,7 @@ a {
 }
 
 /****** Hebergements And Populaires ***********/
+
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
@@ -73,6 +75,7 @@ a {
 }
 
 /****** Hebergements ***********/
+
 .hebergements {
     width: 65%;
 }
@@ -123,6 +126,7 @@ a {
 }
 
 /****** Populaires ***********/
+
 .populaires {
     width: 32%;
 }
@@ -194,9 +198,9 @@ header img {
 
 
 nav a:hover {
-    color: #9747FF;
+    color: #0065FC;
     padding-top: 14px;
-    border-top: #9747FF solid 2px; 
+    border-top: #0065FC solid 2px; 
 }
 
 /* Section numéro 1 */
@@ -221,9 +225,8 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     border-radius: 15px 0 0 15px;
-    height: 47px;
-    width: 50px;
     background-color: #F2F2F2;
+   
 }
 
 .label i {
@@ -232,18 +235,17 @@ nav a:hover {
     height: 18px; 
     font-size: 18px;
     color: black;
+    padding: 15px;
 }
 
 .input {
     display: flex;
     align-items: center;
-    height: 47px;
-    width: 195px;
+    
 }
 
 .input input {
     width: 100%;
-    height: 100%; 
     border: none;
     font-size: 18px;
     font-weight: bold;
@@ -260,16 +262,25 @@ input::placeholder {
 .button {
     display: flex;
     align-items: center;
-    height: 47px;
-    width: 132px; 
+    
 }
 
 .button button {
+    background-color: #0065FC;
+    border: none;
+    border-radius: 0 15px 15px 0;
     width: 100%;
     height: 100%; 
-    border: none;
-    background-color: #0065FC;
-    border-radius: 0 15px 15px 0;
+}
+
+.button button p {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.button button i {
     color: white;
     font-size: 18px;
     font-weight: bold;
@@ -286,6 +297,7 @@ input::placeholder {
 .label-filtre {
     display: flex;
     align-items: center;
+    margin: 0;
 }
 
 .filtre {
@@ -293,13 +305,19 @@ input::placeholder {
     display: flex;
     align-items: center;
     border-radius: 25px;
-    padding: 13px 8px;
+    padding: 10px;
     
 }
  .filtre h3 {
     margin: 0;
+    padding-right: 10px;
+    font-size: 16px;
  }
 
+ .label-filtre h3 {
+    font-size: 16px;
+    margin: 0;
+ }
 
 
 .filtre:hover {
@@ -307,9 +325,7 @@ input::placeholder {
 }
 
 .filtre i {
-    display: inline-block; 
-    width: 22px; 
-    height: 22px; 
+    display: inline-block;  
     font-size: 22px;
     padding-right: 10px;
     padding-left: 10px;
@@ -369,7 +385,7 @@ input::placeholder {
     width: 100%;
     border: none;
     border-radius: 20px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     margin-top: 30px;
     margin-bottom: 30px;
     padding: 0;
@@ -385,6 +401,13 @@ input::placeholder {
 
 .activites-marseille .card .card-title {
     padding-left: 19px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+.activites-marseille .card .card-title h3 {
+    margin: 0;
 }
 
 /* Balises du footer */
@@ -422,6 +445,8 @@ footer {
 
         padding: 0 20px;
     }
+
+
     .container-filtre {
         flex-wrap: wrap;
     }
@@ -464,10 +489,186 @@ footer {
     .activites-marseille .card img {
         height: 200px;
     }
+
+    .activites-marseille .card .card-title {
+        height: 70px;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 19px;
+        display: flex;
+        align-items: center;
+
+    }
+
 }
+
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+
+    /* Header */
+
+    .main-container {
+        padding: 0;
+    }
+
+    header {
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+
+    header img {
+       
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+        margin-left: 42%;
+        margin-right: 42%;
+       }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+       padding: 0;
+        gap: 0;
+    }
+
+    nav ul li {
+
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    
+    }
+
+    nav a {
+
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav a:hover {
+        border-top: none;
+        border-bottom: #0065FC solid 2px;
+        padding-bottom: 14px;
+    }
+
+    .section-1 {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    /* Section 1 */
+
+    .form_location {
+        width: 100%;
+    }
+
+    .label {
+        width: 12.5%;
+    }
+
+    .input {
+        width: 75%;
+    }
+    
+    .button {
+        width: 12.5%;
+    }
+
+    .button button {
+        border-radius: 15px;
+    }
+
+    .button button p {
+    display: none;
+    }
+
+    .container-filtre {
+        width: 100%;
+        justify-content: space-between;
+        gap:0;
+        row-gap: 20px;
+    }
+
+    .filtre {
+        width: 42.5%;
+    }
+
+    /* Herbergements à Marseille */
+
+    .hebergements-and-populaires .hebergements {
+    background-color: white
+    }
+
+    .hebergements {
+        order: 2;
+    }
+    .hebergements-cards {
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+    .hebergements-cards a {
+        width: 100%;
+    }
+
+    /* Populaires */
+
+    .populaires {
+        order: 1;
+        margin-top: 35px;
+    }
+    
+    .populaires-cards {
+        flex-wrap: wrap;
+    }
+    .populaires-cards a {
+        width: 100%;
+    }
+
+     /* Activités à Marseille*/
+
+     .activites h2 {
+        margin-bottom: 30px;
+        margin-top: 0;
+     }
+
+
+     .activites-marseille {
+        flex-wrap: wrap;
+        gap: 15px;
+        
+     }
+
+     .activites-marseille a {
+        width: 100%;
+     }
+
+     .activites-marseille .card {
+        margin: 0;
+     }
+
+    /* Footer */
+
+    .informations-footer {
+        flex-direction: column;
+        gap: 50px;
+        padding: 30px;
+    }
+
+    .informations-footer-bloc {
+        width: 100%;
+    }
 }
 
+@media (min-width: 768px) {
+
+    .button button i {
+        display: none;
+    }
+
+}
