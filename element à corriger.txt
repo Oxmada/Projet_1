@@ -1,0 +1,10 @@
+- rajouter des paadding sur le bouton rechercher
+-border top and Bottom sur l'imput Marseille
+- augmenter le padding des filtres sur mobile
+- le bouton sur mobile qui doit rester carré
+- recentrer sur l'icone information
+- enlever les majuscules balises titre
+#00000040
+
+Réponse : 
+3 - 4
